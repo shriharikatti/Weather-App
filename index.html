@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a3fa1576cf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="weather-canvas"></canvas>
+    <div class="overlay"></div>
+    <header>
+        <h1>Weather Cast </h1>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text" id="city-input" placeholder="Enter the City Name">
+            <button type="submit" id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="weather-display" class="hidden">
+            <div id="loading" style="display:none;">Loading...</div>
+            <div id="error" style="color:red; display:none;"></div>
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" src="" alt="weather-icon" style="display:none;">
+            <p id="temp"></p>
+            <p id="weather-type"></p>
+        </div>
+        <div id="weather-info" class="hidden">
+            <span id="feels-like"><i class="fas fa-thermometer-half"></i></span>
+            <span id="humidity"><i class="fas fa-tint"></i></span>
+            <span id="wind-speed"><i class="fas fa-wind"></i></span>            
+        </div>
+    </main>
+    <footer>
+        <p> &copy; 2025 Weather Cast | Icons by <a href="https://www.graphberry.com" target="_blank">Graphberry</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
